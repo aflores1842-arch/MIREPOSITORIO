@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Desk - Reportar Incidente</title>
+</head>
+<body>
+    <header>
+        <h1>Sistema de Gestión de Incidentes (Help Desk)</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reportar.html">Reportar Incidente</a></li>
+                <li><a href="tickets.html">Listado de Tickets</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Reportar Nuevo Incidente</h2>
+            <p>Por favor, complete el siguiente formulario. Los campos marcados con un asterisco (*) son obligatorios.</p>
+            
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Información del Usuario</legend>
+                    
+                    <label for="nombre">Nombre Completo *:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+                    <br><br>
+                    
+                    <label for="email">Correo Electrónico *:</label>
+                    <input type="email" id="email" name="email" required placeholder="usuario@dominio.com">
+                </fieldset>
+                
+                <br>
+                
+                <fieldset>
+                    <legend>Detalles del Problema</legend>
+                    
+                    <label for="asunto">Asunto del Ticket *:</label>
+                    <input type="text" id="asunto" name="asunto" required>
+                    <br><br>
+                    
+                    <label for="departamento">Categoría *:</label>
+                    <select id="departamento" name="departamento" required>
+                        <option value="">Seleccione una opción...</option>
+                        <option value="hardware">Soporte de Hardware</option>
+                        <option value="software">Soporte de Software</option>
+                        <option value="redes">Conectividad y Redes</option>
+                    </select>
+                    <br><br>
+                    
+                    <label for="descripcion">Descripción del Problema *:</label><br>
+                    <textarea id="descripcion" name="descripcion" rows="5" cols="40" required placeholder="Describa su problema con el mayor detalle posible..."></textarea>
+                </fieldset>
+                
+                <br>
+                <button type="submit">Enviar Reporte</button>
+                <button type="reset">Limpiar Formulario</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sistema Help Desk. Cumpliendo estándares W3C.</p>
+    </footer>
+</body>
+</html>
